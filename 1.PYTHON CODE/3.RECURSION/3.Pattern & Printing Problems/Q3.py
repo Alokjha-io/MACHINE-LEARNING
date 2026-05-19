@@ -1,10 +1,13 @@
 '''
-Print a triangle of stars recursively (top-down).
+Count vowels in a string recursively. 
 '''
 
-n = int(input("Enter n : "))
-def star(i,n):
-    if i>n:
-        return ""
-    return ("*"*i) + "\n" +star(i+1,n)
-print(star(1,n))
+s = input("Enter string : ")
+def vowels(s,i):
+    if i==len(s) :
+        return 0
+    if s[i].lower() in "aeiou":
+        return 1 + vowels(s,i+1)
+    else:
+        return vowels(s,i+1)
+print(vowels(s,0))
