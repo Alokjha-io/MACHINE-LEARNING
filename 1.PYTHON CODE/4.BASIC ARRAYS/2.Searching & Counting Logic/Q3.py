@@ -13,4 +13,4 @@ for j in range(n):
     if x == arr[j]:
         fo_x = j
         break
-print("Fisrt occurence of",x,"is in index",fo_x)
+print("Fisrt occurence of",x,"is in index ",fo_x)
