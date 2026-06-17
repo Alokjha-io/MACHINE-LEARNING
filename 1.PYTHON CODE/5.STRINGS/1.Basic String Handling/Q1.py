@@ -1,18 +1,6 @@
 '''
-Check if the array is sorted in ascending order. 
+Take a string input and print its length. 
 '''
 
-n = int(input("Enter n : "))
-arr = []
-for i in range (n):
-    arr.append(int(input("Enter Element : ")))
-print(arr)
-flag = True
-for j in range(1,n):
-    if arr[j-1]>arr[j]:
-        flag = False
-        break
-if flag == True:
-    print("Array is sorted in ascending order")
-else:
-    print("Array is not sorted in ascending order")
+x = input("Enter string : ")
+print("Length of string is",len(x))
