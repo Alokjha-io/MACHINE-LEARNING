@@ -1,6 +1,10 @@
 '''
-Reverse a string without using built-in reverse. 
+Remove all vowels from a string. 
 '''
 
-x = input("Enter string : ")
-print("".join(reversed(x)))
+str = input("Enter string : ").lower()
+result = ""
+for s in str:
+    if s not in "aeiou":
+        result+=s
+print(result)
