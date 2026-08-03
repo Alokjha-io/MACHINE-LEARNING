@@ -1,9 +1,7 @@
 '''
-Capitalize the first letter of each word.
+Print the sentence in title case (first letter capital, rest lowercase).
 '''
 
 str = input("Enter string : ")
-words = str.split()
-for w in words:
-    w = w.capitalize()
-    print(w)
+str = str.title()
+print(str)
